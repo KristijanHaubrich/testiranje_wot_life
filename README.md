@@ -20,3 +20,6 @@ pomoću klase **Assert** i metode **assertEquals()**. Pomicanja, odnosno *scroll
 ### PlayerSearch
 
 U prvom testnom slučaju naziva PlayerSearch, testira se pretraga korisnika pomoću search bar-a. Test se izvršava unutar metode **wot_life_player_search()**.
+Prvo se stvorila instanca **WebElement** koja je nazvana *search* i koja predstavlja search bar. Pomoću metode *sendKeys()* upisano je u search bar ime korisnika (*Hauba*) te se pomoću metode *submit()* pokreće pretraživanje pojma. Za provjeru uspješnosti pretraživanja korišten je novi **WebElement** *username* koji predstavlja naziv korisnika koji piše kad se jednom pretraži profil. Provjera da li se podudara naziv korisnika s traženim se odrađuje pomoću već spomenute *assertEquals()* metode.
+
+### ClanSearch
