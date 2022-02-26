@@ -18,8 +18,16 @@ pomoću klase **Assert** i metode **assertEquals()**. Pomicanja, odnosno *scroll
 **JavascriptExecutor** sučelja.
 
 ### [PlayerSearch](kristijan_haubrich_testiranje/src/test/java/PlayerSearch.java)
-
 U prvom testnom slučaju naziva PlayerSearch, testira se pretraga korisnika pomoću search bar-a. Test se izvršava unutar metode **wot_life_player_search()**.
 Prvo se stvorila instanca **WebElement** koja je nazvana *search* i koja predstavlja search bar. Pomoću metode *sendKeys()* upisano je u search bar ime korisnika (*Hauba*) te se pomoću metode *submit()* pokreće pretraživanje pojma. Za provjeru uspješnosti pretraživanja korišten je novi **WebElement** *username* koji predstavlja naziv korisnika koji piše kad se jednom pretraži profil. Provjera da li se podudara naziv korisnika s traženim se odrađuje pomoću već spomenute *assertEquals()* metode.
 
-### ClanSearch
+### [ClanSearch](kristijan_haubrich_testiranje/src/test/java/ClanSearch.java)
+U drugom testnom slučaju naziva ClanSearch, testira se pretraga klana pomoću search bar-a. Test se izvršava unutar metode **wot_life_clan_search()**.
+Prvo se stvori instanca **WebElement** naziva *clan* koja predstavlja tipku za prebacivanje na pretraživanje klanova. Potom se stvori instanca **WebElement** naziva *search* koja predstavlja search bar za klanove. Pomoću metode *sendKeys()* upisan je u search bar string (*fa*). Instanca **WebElement** naziva *clan_search* predstavlja određeni predloženi klan koji nastane u search baru nakon upisa stringa. Kad se klikne na *clan_search* odlazi se na profil klana.Za provjeru uspješnosti pretraživanja korišten je novi **WebElement** *moto* koji predstavlja moto klana koji se provjerava pomoću već spomenute *assertEquals()* metode.
+
+### [Login](kristijan_haubrich_testiranje/src/test/java/Login.java)
+U trećem testnom slučaju naziva Login, testira se logiranje korisnika preko *World of Tanks* računa. Test se izvršava unutar metode **wot_life_login()**.
+
+
+
+
