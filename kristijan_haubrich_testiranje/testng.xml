@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllTestsSuite">
+    <test name="wot-life_tests">
+        <classes>
+            <class name="PlayerSearch"/>
+            <class name="ClanSearch"/>
+            <class name="Login"/>
+            <class name="DisplayPlayerTanksByTier"/>
+            <class name="FIlterSpecificPlayerTank"/>
+        </classes>
+    </test>
+</suite>
