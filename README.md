@@ -1,1 +1,2 @@
 # testiranje_wot_life
+https://github.com/KristijanHaubrich/testiranje_wot_life/blob/35eb0e285d2a240c8c597824fbf7a9c4620defd2/kristijan_haubrich_testiranje/src/test/java/ClanSearch.java#L28
