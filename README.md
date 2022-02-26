@@ -16,3 +16,7 @@ pomoću *driver*-a se povećava (engl. *maximize*) prozor i pristupa navedenom U
 završava gašenjem *driver*-a unutar **teardownTest()** metode. Stringovi se uspoređuju 
 pomoću klase **Assert** i metode **assertEquals()**. Pomicanja, odnosno *scrollanje* je realizirano pomoću 
 **JavascriptExecutor** sučelja.
+
+### PlayerSearch
+
+U prvom testnom slučaju naziva PlayerSearch, testira se pretraga korisnika pomoću search bar-a. Test se izvršava unutar metode **wot_life_player_search()**.
