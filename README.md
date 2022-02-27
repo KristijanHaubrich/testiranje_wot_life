@@ -32,4 +32,14 @@ U trećem testnom slučaju ,naziva Login, testira se logiranje korisnika preko *
 U četvrtom testnom slučaju ,naziva DisplayPlayerTanksByTier, testira se prikaz tenkova određenog korisnika prema razini tenka (engl. *tier*). Test se izvršava unutar metode **wot_life_display_player_tanks_by_tier()**. Prvo se stvorila instanca **WebElement** koja je nazvana *search* i koja predstavlja search bar. Pomoću metode *sendKeys()* upisano je u search bar ime korisnika (*Hauba*) te se pomoću metode *submit()* pokreće pretraživanje pojma.  Nakon prikaza profila korisnika stvara se instanca **JavascriptExecutor** preko koje se izvršava scrollanje za 1000 piksela. Nakon toga klikće se na padajući izbornik *Tenks* preko **WebElement** *tanks*. Za kraj u tablici gdje su prikazani tenkovi pritisne se filter za *tier* tenkova preko **WebElement** *tier*.
 
 ### [FIlterSpecificPlayerTank](kristijan_haubrich_testiranje/src/test/java/FIlterSpecificPlayerTank.java)
-U petom i posljednjem testnom slučaju ,naziva FIlterSpecificPlayerTank, testira se prikaz tenkova korisnika preko određenog naziva. Test se izvršava unutar metode **wot_life_display_player_tanks_by_tier()**. Prvo se stvorila instanca **WebElement** koja je nazvana *search* i koja predstavlja search bar. Pomoću metode *sendKeys()* upisano je u search bar ime korisnika (*Hauba*) te se pomoću metode *submit()* pokreće pretraživanje pojma.  Nakon prikaza profila korisnika stvara se instanca **JavascriptExecutor** preko koje se izvršava scrollanje za 1000 piksela. Nakon toga klikće se na padajući izbornik *Tenks* preko **WebElement** *tanks*. Za kraj u tablici gdje su prikazani tenkovi pritisne se filter za *tier* tenkova preko **WebElement** *tier*.
+U petom i posljednjem testnom slučaju ,naziva FIlterSpecificPlayerTank, testira se prikaz tenkova korisnika preko određenog naziva. Test se izvršava unutar metode **wot_life_display_player_tanks_by_tier()**. Prvo se stvorila instanca **WebElement** koja je nazvana *search* i koja predstavlja search bar. Pomoću metode *sendKeys()* upisano je u search bar ime korisnika (*Hauba*) te se pomoću metode *submit()* pokreće pretraživanje pojma.  Nakon prikaza profila korisnika stvara se instanca **JavascriptExecutor** preko koje se izvršava scrollanje za 1000 piksela. Nakon toga klikće se na padajući izbornik *Tenks* preko **WebElement** *tanks*. Potom se preko **WebElement** *search_tank* upise naziv tenka za prikaz u search bar te se pretraži tenk. Na kraju se preko id-a tenka provjerava isprevnost prikaza uz pomoć već spomenute *assertEquals()* metode.
+
+### TestNG.xml
+Osim ovakvog načina testiranja, moguće je web stranicu testirati pomoću ručno konfigurirane datoteke
+**TestNG.xml**. Takav način testiranja je moguće pokrenuti pritiskom na opciju *Run* ili iz komadne
+linije sa sljedećom naredbom:
+```
+$mvn test   (Ctrl + Enter)
+```
+
+Također izvješće o testovima moguće je pogledati u obliku html prikaza klikom na [izvješće]()
