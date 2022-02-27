@@ -42,4 +42,4 @@ linije sa sljedećom naredbom:
 $mvn test   (Ctrl + Enter)
 ```
 
-Također izvješće o testovima moguće je pogledati u obliku html prikaza klikom na [izvješće]()
+Također izvješće o testovima moguće je pogledati u obliku html prikaza klikom na [izvješće](kristijan_haubrich_testiranje/test_results.html)
