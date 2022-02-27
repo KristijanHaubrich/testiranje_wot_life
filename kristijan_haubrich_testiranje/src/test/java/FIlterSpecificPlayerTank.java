@@ -29,7 +29,7 @@ public class FIlterSpecificPlayerTank {
     }
 
     @Test
-    public void wot_life_display_player_tanks_by_tier() throws InterruptedException {
+    public void wot_life_filter_specific_player_tank() throws InterruptedException {
         //pretraga korisnika
         Thread.sleep(2000);
         WebElement search = driver.findElement(By.name("search"));
